@@ -8,8 +8,8 @@ developers and AI coding agents. Deterministic, stdlib only, no network.
 import os
 
 TIP = (
-    "Tip: Your agent fixed the bug and the three workarounds holding it up. "
-    "That's why everything else fell down."
+    "Tip: When every test passes instantly, ask what your agent mocked. "
+    "It may have replaced the database, the clock, and the problem."
 )
 
 
