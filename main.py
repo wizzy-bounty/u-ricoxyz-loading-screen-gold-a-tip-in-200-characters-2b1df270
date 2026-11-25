@@ -8,8 +8,8 @@ developers and AI coding agents. Deterministic, stdlib only, no network.
 import os
 
 TIP = (
-    "Tip: The developer typed 'just' and the agent opened nine files. "
-    "This screen is the ninth file, still loading."
+    "Tip: Your agent fixed the bug and the three workarounds holding it up. "
+    "That's why everything else fell down."
 )
 
 
