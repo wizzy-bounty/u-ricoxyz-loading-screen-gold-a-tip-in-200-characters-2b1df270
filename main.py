@@ -8,8 +8,8 @@ developers and AI coding agents. Deterministic, stdlib only, no network.
 import os
 
 TIP = (
-    "Tip: Somewhere, your coding agent is watching a spinner too. "
-    "Neither of you is the bottleneck. The spinner is."
+    "Tip: You have both read that error 12 times. "
+    "On the 13th, one of you will believe it."
 )
 
 
