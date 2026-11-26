@@ -1,24 +1,14 @@
-#!/usr/bin/env python3
-"""Loading Screen Gold: A Tip in 200 Characters.
-
-Writes one loading-screen tip (at most 200 characters) for stressed
-developers and AI coding agents. Deterministic, stdlib only, no network.
-"""
-
 import os
+from pathlib import Path
 
-TIP = (
-    "Tip: When every test passes instantly, ask what your agent mocked. "
-    "It may have replaced the database, the clock, and the problem."
-)
+def entry_text():
+    return "Tip: When every test passes instantly, ask what your agent mocked. It may have replaced the database, the clock, and the problem."
 
 
-def main() -> None:
-    assert 1 <= len(TIP) <= 200
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-    os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as fh:
-        fh.write(TIP)
+def main():
+    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+    output_dir.mkdir(parents=True, exist_ok=True)
+    (output_dir / "entry.txt").write_text(entry_text(), encoding="utf-8")
 
 
 if __name__ == "__main__":
